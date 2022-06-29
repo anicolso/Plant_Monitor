@@ -1,0 +1,445 @@
+/* 
+Yellow: #F5E356
+Burnt Orange: #CB6318
+Blue: #4D85BD
+Grey: #9D9D9D
+Cream: #FFFFE3
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #a0c9a5;
+}
+  
+  /*
+  @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+	  animation: App-logo-spin infinite 20s linear;
+	}
+  }
+  */
+  
+/****************************
+*        HEADER+NAV
+*****************************/
+.top-header {
+	position: relative;
+	height: 9vmin;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	z-index: 1;
+}
+
+.top-logo {
+	display: flex;
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	top: 13%;
+	left: 10%;
+	pointer-events: none;
+}
+
+.select-box {
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+}
+
+.select-plant{
+	background-color: #fff;
+	color: #494949;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	width: 100%;
+	border: none;
+	border-radius: 12px;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: 'Arial';
+	font-size: 1.05rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav-bar {
+	display: flex;
+	position: absolute;
+	padding-right: 5%;
+	top: 40%;
+	right: 5%;
+}
+
+.nav-btn, .link:visited {
+	list-style-type: none;
+	font-family: 'Arial';
+	font-size: 1.15rem;
+	font-variant: small-caps;
+	font-weight: bolder;
+	font-stretch: expanded;
+	padding-left: 20px;
+	color: #494949;
+}
+
+.link {
+	color: #494949;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: rgb(37, 132, 196);
+}
+
+/****************************
+*       WELCOME+BAR
+*****************************/
+
+.content-body {
+	position: relative;
+	display: flex;
+	flex: 0 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15%;
+	padding-top: 7%;
+	width:65%;
+	z-index: 0;
+}
+
+.content-welcome {
+	padding-top: 10%;
+	font-family:'Times New Roman';
+	font-weight: bold;
+	font-size: 8vmin;
+	letter-spacing: -2px;
+	color: #FFF;
+}
+
+.status-bar {
+    border-radius: 14px;
+}
+
+.plant-img {
+	display: flex;
+	height: 100%;
+	top: 11%;
+}
+
+.health-header {
+	padding-top: 12%;
+	margin: auto;
+	text-align: center;
+	font-family:'Times New Roman';
+	font-weight: bold;
+	font-size: 8vmin;
+	letter-spacing: -2px;
+	color: #FFF;
+}
+
+.App-link {
+	color: #61dafb;
+}
+  
+  .plant-select {
+	padding: 10px;
+  }
+
+  .plant-health {
+	  padding-top: 10px;
+  }
+
+  .plant-overall-health {
+	width: 75%;
+	margin: auto;
+	padding: 20px;
+  }
+
+  .text-color {
+	  color: white;
+  }
+  
+  /****************************
+*       STATUS CIRCLES
+*****************************/
+  .health-and-status {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3%;
+  }
+
+  .readings {
+	  color: #FFF;
+	  font-family:'Arial';
+	  font-size: 1.5rem;
+	  letter-spacing: 0px;
+  }
+
+  .live-voltage {
+	color: #e0d9a2;
+	font-size: 1.7rem;
+	font-weight: bold;
+  }
+
+  .optimum {
+	color: #FFF;
+	font-family:'Arial';
+	font-size: 1.1rem;
+	letter-spacing: 1px;	  
+  }
+  
+  .water-btn {
+	display: flex;
+	justify-content: center;
+	padding-top: 4%;
+	padding-bottom: 7%;
+  }
+
+  .pump-btn {
+	font-family: 'Times New Roman';
+	font-size: 6vmin;
+	font-weight: bold;
+	letter-spacing: -2px;
+	color: #494949;
+	background-color: #FFF;
+	width: 40%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius: 14px;
+	border: none;
+  }
+
+  .pump-btn:hover {
+	color: #FFFF;
+	background-color: rgb(37, 132, 196);  
+  }
+
+  .flex {
+	  display: flex;
+  }
+
+  .w3-blue,.w3-hover-blue:hover{
+	  color:#fff!important;
+	  background-color:#2196F3!important
+	}
+
+.w3-container, .w3-panel {
+	padding: 0.01em 16px;
+}
+
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
+.graphs-container {
+	padding-bottom: 10%;
+}
+
+.graphs {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3%;
+}
+
+.graph-date-range {
+	display: flex;
+	justify-content: space-between;
+}
+
+.graph-date-buttons {
+	border-radius: 10px; 
+	padding: 10px 50px 10px 50px;
+
+}
+
+.graph-readings {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3%;
+	color: #FFF;
+	font-family:'Arial';
+	font-size: 1.5rem;
+	letter-spacing: 0px;
+}
+
+.sensor-details {
+	text-align: center;
+}
+
+.change-btn {
+	display: flex;
+	justify-content: center;
+	padding-top: 4%;
+	padding-bottom: 2%;
+}
+
+#display-btn {
+	font-family: 'Times New Roman';
+	font-size: 6vmin;
+	font-weight: bold;
+	letter-spacing: -2px;
+	color: #494949;
+	background-color: #FFF;
+	width: 40%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius: 14px;
+	border: none;
+}
+
+#display-btn:hover {
+	color: #FFFF;
+	background-color: rgb(37, 132, 196);  
+  }
+
+/****************************
+*       STATUS CIRCLES
+*****************************/
+
+.circle-wrap {
+	/* margin: 300px auto; */
+	width: 300px;
+	height: 300px;
+	background: rgb(255, 255, 255);
+	border-radius: 50%;
+	/* border: 1px solid #cdcbd0; */
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+	clip: rect(0px, 300px, 300px, 150px);
+  }
+  
+  .circle-wrap .inside-circle {
+	width: 244px;
+	height: 244px;
+	border-radius: 50%;
+	background: #494949;
+	line-height: 240px;
+	text-align: center;
+	margin-top: 28px;
+	margin-left: 28px;
+	font-family: 'Arial';
+	color: #FFFFFF;
+	position: absolute;
+	z-index: 100;
+	font-weight: 500;
+	font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  /*
+  * COLOUR OF THIS IS COLOUR OF ALL
+  */
+  .mask .fill {
+	clip: rect(0px, 150px, 300px, 0px);
+	background-color: #2196F3;
+  }
+  
+  /* TODO:
+	* THIS WILL HOLD THE CURRENT HEALTH % OF THE ITEM... 
+	* Will need to pull value and read .csv and divide to receive a %, 
+	* Then transform into a degree of the status bar
+  */
+  .mask.full,
+  .circle .fill {
+	animation: fill ease-in-out 3s;
+	transform: rotate(135deg);
+  }
+  
+  /*
+  * THIS PART CONTROLS THE INITIAL FILL ANIMATION
+  * Need it to match the transform in the previous
+  * element.
+  */
+  @keyframes fill{
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(135deg);
+	}
+  }
+
+
+  /**
+  
+  new circle progress
+ 
+  */
+
+
+  .circular-progress {
+	position: relative;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+  }
+  .circular-progress:before {
+	content: "";
+	position: absolute;
+	height: 84%;
+	width: 84%;
+	background-color: #ffffff;
+	border-radius: 50%;
+  }
+  .value-container {
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	font-size: 50px;
+	color: #231c3d;
+  }
+
+ 
+/****************************
+*        ABOUT PAGE
+*****************************/
+.content-about {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: right;
+	z-index: 0;
+}
+
+.content-about-header {
+	padding-top: 13%;
+	padding-left:35%;
+	font-family:'Times New Roman';
+	font-weight: bold;
+	font-size: 8vmin;
+	letter-spacing: -2px;
+	color: #FFF;
+}
+
+.content-about-body {
+	padding-left:0%;
+	width: 60%;
+	font-family:'Times New Roman';
+	font-size: 2vmin;
+	letter-spacing: 0px;
+	color: #FFF;
+}
+
+.about-img {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	top: 20%;
+	left: 14%;
+}
+  

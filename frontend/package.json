@@ -1,0 +1,11 @@
+{
+	"name": "udp-relay-demo",
+	"version": "0.0.1",
+	"description": "Demo relaying UDP messages from Node.js to a C app.",
+	"dependencies": {
+		"bootstrap": "^5.1.3",
+		"jquery-csv": "^1.0.21",
+		"mime": "~1.2.7",
+		"socket.io": "~0.9.6"
+	}
+}

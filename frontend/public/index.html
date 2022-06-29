@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ivy: Your Plant Companion</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1052.0" data-gr-ext-installed="">
+    <form>
+      <div class="top-header">
+        <div class="top-logo">
+          <img 
+            height="80%"
+            src="v3.png"/>
+        </div>
+        <!-- Select -->
+        <div class="select-box">
+          <select class="select-plant" id="select-plant">
+            <!--Populated by .js-->
+          </select>
+        </div>
+
+        <div class='nav-bar'>
+          <li id="home-btn" class="nav-btn"><a href="index.html" class="link">home</a></li>
+          <li id="about-btn" class="nav-btn"><a href="about-us.html" class="link">about</a></li>
+          <li class="nav-btn"><a href="index.html" class="link">login</a></li>
+        </div>
+      </div>
+
+      <!-- Content + Status-->
+      <div class="content-body">
+        <div class="content-welcome">
+          <span id="status"> your plant's status</span>
+          <div class="plant-health">
+            <div class="plant-overall-health">
+              <div class="w3-light-grey status-bar">
+                <div
+                  class="w3-container w3-blue status-bar"
+                  id="overall-health"
+                  style="width: 35%">
+                  35%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plant-img">
+          <img 
+            height="700vmin";
+            src="plant.png"/>
+        </div>
+      </div>
+
+
+
+      <div class="status-circles">
+        <!-- HEADER -->
+        <div class="health-header">
+          <span id="overview">overview of health</span>
+        </div>
+        <div class="circles">
+          <!-- CIRCLES-->
+          <!-- Light box -->
+          <div class="health-and-status">
+            <div class="box">
+              <div id="light-progress-circle" class="circular-progress" style="background: conic-gradient(rgb(77, 91, 249) 360deg, rgb(202, 220, 255) 360deg);">
+                <div id="light-progress" class="value-container">0%</div>
+              </div>
+              <!-- LIGHT LIVE READS -->
+              <div class="sensor-details">
+                <div>
+                  <h2>
+                    <!-- <Badge pill bg={badgeType}>{healthType}</Badge> -->
+                  </h2>
+                </div>
+                <span class="readings">Live Light Reading</span>
+                <div>
+                  <span class="live-voltage" id='light-reading'>0.00V</span>
+                </div>
+                <div class="optimum">
+                  (<span id="optimum-light-value">temp</span>)
+                </div>
+              </div>
+            </div>
+
+            <!-- MOISTURE BOX -->
+            <div class="box">
+                  <!-- <CircularProgressbar value={percentage} text={`${percentage}%`} /> -->
+                  <div id="moisture-progress-circle" class="circular-progress" style="background: conic-gradient(rgb(77, 91, 249) 360deg, rgb(202, 220, 255) 360deg);">
+                    <div id="moisture-progress" class="value-container">0%</div>
+                  </div>
+                  <!-- MOISTURE LIVE READS -->
+                  <div class="sensor-details">
+                    <div>
+                      <h2>
+                        <!-- <Badge pill bg={badgeType}>{healthType}</Badge> -->
+                      </h2>
+                    </div>
+                    <span class="readings">Live Moisture Reading</span>
+                    <div>
+                      <span class="live-voltage" id="moisture-reading">0.00V</span>
+                    </div>
+                    <div class="optimum">
+                      (<span id="optimum-moisture-value">temp</span>)
+                    </div>
+                  </div>
+            </div>
+
+            <!-- HUMIDITY BOX -->
+            <div class="box">
+                <div id="humidity-progress-circle" class="circular-progress" style="background: conic-gradient(rgb(77, 91, 249) 360deg, rgb(202, 220, 255) 360deg);">
+                  <div id="humidity-progress" class="value-container">0%</div>
+                </div>
+                <!-- HUMIDITY LIVE READS -->
+                <div class="sensor-details">
+                  <div>
+                    <h2>
+                      <!-- <Badge pill bg={badgeType}>{healthType}</Badge> -->
+                    </h2>
+                  </div>                  
+                  <span class="readings">Live Humidity Reading</span>
+                  <div>
+                    <span class="live-voltage" id="humidity-reading">0.00V</span>
+                  </div>
+                  <div class="optimum">
+                    (<span id="optimum-humidity-value">temp</span>)
+                  </div>
+                </div>
+            </div>
+            <!-- TEMPERATURE BOX -->
+            <div class="box">
+                  <div id="temp-progress-circle" class="circular-progress" style="background: conic-gradient(rgb(77, 91, 249) 360deg, rgb(202, 220, 255) 360deg);">
+                    <div id="temp-progress" class="value-container">0%</div>
+                  </div>
+                  <!-- TEMPERATURE LIVE READS -->
+                  <div class="sensor-details">
+                    <div>
+                      <h2>
+                        <!-- <Badge pill bg={badgeType}>{healthType}</Badge> -->
+                      </h2>
+                    </div>                  
+                    <span class="readings">Live Temperature Reading</span>
+                    <div>
+                      <span class="live-voltage" id="temperature-reading">0.00V</span>
+                    </div>
+                    <div class="optimum">
+                      (<span id="optimum-temperature-value">temp</span>)
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+      </div>
+
+      <div class="water-btn">
+          <!-- <ControlButtons name={faDroplet} description='Activate Pump' action='pumpOn'/> -->
+          <input type="button" id="pump-btn" class="pump-btn" value="water your plant!" onclick=""></input>
+      </div>
+
+      <div class="status-circles">
+        <!-- HEADER -->
+        <div class="health-header">
+          <span id="overview">health history</span>
+        </div>
+        <!-- GRAPHS -->
+        <div class="graphs-container">
+          <div class="graphs">
+              <!-- LIGHT GRAPH -->
+              <div class="box">
+                <div>
+                  <div class="readings">
+                    <img
+                      id="light-graph"
+                      height="500"
+                      src="LightFig.png"
+                      alt="updating..."
+                    />
+                  </div>
+                  <div class="graph-readings">
+                    <span>Light Levels</span>
+                  </div> 
+                </div>
+              </div>
+              <!-- HUMIDITY GRAPH -->
+              <div class="box">
+                <div>
+                  <div class="readings">
+                    <img
+                      id="humidity-graph" 
+                      height="500"
+                      src="HumidityFig.png"
+                      alt="updating..."
+                    />
+                  </div>
+                  <div class="graph-readings">
+                    <span>Humidity Levels</span>
+                  </div> 
+                </div>
+              </div>
+              <!-- TEMPERATURE GRAPH-->
+              <div class="box">
+                <div>
+                  <div class="readings">
+                    <img
+                      id="temp-graph"
+                      height="500"
+                      src="TempGraph.png"
+                      alt="updating..."
+                    />
+                  </div>
+                  <div class="graph-readings">
+                    <span>Temperature Levels</span>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="change-btn">
+              <input type="button" id="display-btn" value="change display"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    
+
+    <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+    <script
+      src="http://code.jquery.com/jquery-1.11.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="javascripts/jquery-csv.js"></script>
+    <script src="javascripts/ivy_ui.js" type="module"></script>
+
+
+    <iframe
+      id="nr-ext-rsicon"
+      style="
+        position: absolute;
+        display: none;
+        width: 50px;
+        height: 50px;
+        z-index: 2147483647;
+        border-style: none;
+        background: transparent;
+      "
+    ></iframe>
+  </body>
+</html>
